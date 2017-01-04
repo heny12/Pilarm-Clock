@@ -19,6 +19,9 @@ def get_greeting(name):
 		greeting = 'Good Evening '
 	return greeting + name + '.'
 
+def get_goodbye(name):
+	return "That is your news for today %s, have a good day." % (name)
+
 def get_weather():
 	# TODO based on location
 	r = requests.get('http://api.openweathermap.org/data/2.5/weather?q=Seattle&APPID=9935847f235b2e508070cc9e226bc8aa&units=imperial')

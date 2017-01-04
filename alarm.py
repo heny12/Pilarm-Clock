@@ -13,11 +13,12 @@ name = 'Henry'
 greeting = get_greeting(name)
 weather = get_weather()
 headlines = get_headlines(3)
+goodbye = get_goodbye(name)
 
 opening = Player('vivaldi.mp3')
 closing = Player('vivaldi2.mp3')
-speech = Speech(greeting + weather + headlines)
+speech = Speech(greeting + weather + headlines + goodbye)
 
-# opening.play()
+opening.play()
 speech.talk()
-# closing.play()
+closing.play()
